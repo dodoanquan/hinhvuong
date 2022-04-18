@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+		<title>Test</title>
+</head>
+<body>
+		<script>
+		    function chieurong(m){
+			for(var i = 1; i <= m; i++) {
+            {
+                document.write("*<br/>");
+            }
+        	}}
+        	function chieudai(n){
+			for(var k = 1; k <= n; k++) {
+            {
+               document.write("*");
+            }
+        	}}
+	    	function kiemTra(n){
+				if (n<1 || n%1 != 0) {
+					alert("Phải nhập số nguyên dương!")
+					n=prompt("Nhập số n")
+					kiemTra(n)
+				}
+				else{
+					chieudai(n)
+				}
+			}
+			function kiemTra(m){
+				if (m<1 || m%1 != 0) {
+					alert("Phải nhập số nguyên dương!")
+					n=prompt("Nhập số m")
+					kiemTra(m)
+				}
+				else{
+					chieurong(m)
+				}
+			}
+			var m=prompt("Nhập số m")
+			kiemTra(m);
+			var n=prompt("Nhập số n")
+			kiemTra(n);
+	</script>
+</body>
+</html>
